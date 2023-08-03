@@ -21,6 +21,6 @@ export const useFrom = (inicialFrom = {}) =>{
     ...fromState,
        fromState,
        onInputChange,
-       onResetFrom
+       onResetFrom,
   };
 };

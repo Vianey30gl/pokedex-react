@@ -1,7 +1,3 @@
-import React from 'react'
+import { createContext } from "react";
 
-export const PokemonContext = () => {
-  return (
-    <div>PokemonContext</div>
-  )
-}
+export const PokemonContext = createContext();

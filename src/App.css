@@ -37,7 +37,13 @@
 
 body {
 	font-family: 'Georgia, 'Times New Roman', Times, serif';
-background-image: url("https://i.pinimg.com/564x/2a/ee/80/2aee805c79d2c33d14042719bf153e76.jpg");
+
+background-image: url("https://i.pinimg.com/564x/d2/db/44/d2db44554c2e68060d047abcc3936c94.jpg") ;
+ /* background-size: auto; 
+background-repeat: no-repeat; 
+margin: 0;
+height: 100vh;    
+background-color: rgb(102, 189, 134);*/
 }
 
 .container {
@@ -53,6 +59,21 @@ header {
 	padding: 40px 0;
 }
 
+.input-poke{
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	padding: 15px 30px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.logo{
+	width: 550px;
+}
 .logo img {
 	width: 160px;
 }
@@ -85,7 +106,7 @@ header form {
 .icon-search {
 	width: 20px;
 	height: 20px;
-	stroke: #555;
+	stroke: #fffffff4;
 }
 
 .btn-search {
@@ -95,7 +116,20 @@ header form {
 	padding: 15px 30px;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	color: #fff;
-	background-color: rgb(5, 101, 255);
+	background-color: rgb(0, 98, 255);
+	cursor: pointer;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.boton-Pagi{
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	padding: 15px 30px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color: #000000;
+	background-color: rgb(151, 198, 255);
 	cursor: pointer;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -111,22 +145,6 @@ header form {
 	display: flex;
 }
 
-.icon-filter {
-	display: flex;
-	align-items: center;
-	gap: 15px;
-
-	margin-bottom: 20px;
-	cursor: pointer;
-}
-
-.icon-filter .icon {
-	width: 30px;
-	height: 30px;
-	stroke: #555;
-}
-
-
 .card-list-pokemon {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -139,7 +157,7 @@ header form {
 }
 
 .card-img {
-	background-color: #f2f2f2;
+	background-color: #c0fcde;
 
 	display: flex;
 	align-items: center;
@@ -163,7 +181,7 @@ header form {
 
 .pokemon-id {
 	display: block;
-	color: #888;
+	color: #ffffff;
 	margin-bottom: 15px;
 }
 
@@ -315,19 +333,22 @@ header form {
 
 .number-pokemon {
 	position: absolute;
-	top: -130px;
+	top: -100px;
 	left: 0;
 
 	font-size: 200px;
-	font-weight: 700;
-	color: var(--color-primary-hover);
+	font-weight: 30;
+	color: rgb(0, 0, 0);
+}
+.evoluciones{
+    grid-column: auto;
 }
 
 .container-img-pokemon {
 	order: 2;
 	flex: 1;
 	padding: 25px 25px 25px 0;
-	height: 400px;
+	height: 350px;
 }
 
 .container-img-pokemon img {
@@ -346,13 +367,14 @@ header form {
 .container-info-pokemon h1 {
 	text-align: right;
 	font-size: 60px;
+	color: rgb(0, 0, 0);
 }
 
 .info-pokemon {
 	display: flex;
 	justify-content: space-between;
-
-	margin-top: 20px;
+    color: rgb(0, 0, 0);
+	margin-top: 30px;
 }
 
 .group-info{
@@ -370,6 +392,7 @@ header form {
 	display: flex;
 	gap: 50px;
 	align-items: center;
+	color: rgb(0, 0, 0);
 }
 
 .stats {
@@ -394,7 +417,7 @@ header form {
 .progress-bar {
 	width: 100%;
 	height: 30px;
-	background-color: var(--color-primary);
+	background-color: rgb(49, 112, 5);
 	border-radius: 10px;
 }
 
@@ -435,3 +458,17 @@ header form {
 	background-color: var(--color-primary-hover);
 	color: #000;
 } 
+
+.pagination-btn {
+	background-color: rgb(124, 255, 255);
+	border: none;
+	border-radius: 50%;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin: 0px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  }

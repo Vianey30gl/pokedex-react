@@ -1,5 +1,8 @@
+//------------------Cara de la pagina------------------//
+
 import React from 'react'
 import { PokemonList } from '../Componentes/PokemonList'
+import Pagination from './Paginacion'
 
 export const HomePage = () => {
   return (
@@ -23,10 +26,10 @@ export const HomePage = () => {
                    0a1.5 1.5 0 00-3 0m-9.75 0h9.75'
                   />
                   </svg>
-                <span>Filtar</span>
       </div>
     </div>
   <PokemonList/>
+<Pagination />
     </>
   )
 }
